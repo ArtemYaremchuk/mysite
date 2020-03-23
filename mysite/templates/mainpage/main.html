@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %} Главная страница {% endblock title %}
+
+
+{% block content %}
+ <div class="card mb-3"><!--Карточки Bootstrap -->
+    <img src="static/images/mainpage.jpg" class="card-img-top" alt="...">
+    <img src="static/images/logo.png" class="logo"  alt="...">
+ </div>
+
+
+<div class="row w-100 mx-0"> <!-- 3 cards in a row -->
+     <div class="col-4 px-4">
+        <div class="card">
+            {% for Cars in car_list %}
+            <img src="static/images/cars/{{Cars.car_pic}}" class="card-img-top" alt="...">
+
+            <div class="card-body">
+                <h5 class="card-title" align="center">{{Cars.car_name}}</h5>
+                     <!-- icons --> {%endfor%}
+              <div class="row mb-2 mx-auto w-100" >
+                <div class="col-4 text-center p-4">
+                  <img src="static/images/svg/door.svg" class="w-100">
+                  <span class="text-nowrap">Дверей-5</span>
+                </div>
+                <div class="col-4 text-center p-4">
+                  <img src="static/images/svg/petrol.svg" class="w-100">
+                  <span class="text-nowrap">6.9л/100км</span>
+                </div>
+                <div class="col-4 text-center p-4">
+                  <img src="static/images/svg/luggage.svg" class="w-100">
+                  <span class="text-nowrap">810л</span>
+                </div>
+              </div>
+                <!-- icons -->
+            </div>
+                <!-- Таблица -->
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"></li>
+              <li class="list-group-item text-center"><font face="Arial">Стоимость в сутки</font></li>
+                <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    3000 грн
+                  </div>
+                  <div class="col">
+                    от 26 суток
+                  </div>
+                </li>
+              <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    3200 грн
+                  </div>
+                  <div class="col">
+                    от 10-25 суток
+                  </div>
+                  </div>
+                </li>
+              <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    3400 грн
+                  </div>
+                  <div class="col">
+                    от 4-9 суток
+                  </div>
+                  </div>
+                </li>
+              <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    3600 грн
+                  </div>
+                  <div class="col">
+                    от 1-3 суток
+                  </div>
+                  </div>
+                </li>
+            </ul>
+                <!-- Таблица -->
+            <div class="card-body center-block text-center">
+                <button type="button" class="btn btn-primary btn-md">Заказать</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4 px-2">
+        <div class="card">
+            <img src="static/images/cars/{{Cars.car_pic}}" class="card-img-top" alt="..." style="position:relative; left:20px; width:85%;">
+            <div class="card-body">
+                <h5 class="card-title" align="center">Volkswagen Golf R 2017</h5>
+            <div class="row mb-2 mx-auto w-100" >
+                <div class="col-4 text-center p-4">
+                  <img src="static/images/svg/door.svg" style="height:45px; width:45px;" class="w-100" >
+                  <span class="text-nowrap">Дверей-5</span>
+                </div>
+                <div class="col-4 text-center p-4">
+                  <img src="static/images/svg/petrol.svg" style="height:45px; width:45px;" class="w-100">
+                  <span class="text-nowrap">8.5л/100км</span>
+                </div>
+                <div class="col-4 text-center p-4">
+                  <img src="static/images/svg/luggage.svg" style="height:45px; width:45px; " class="w-100">
+                  <span class="text-nowrap">343л</span>
+                </div>
+              </div>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"></li>
+              <li class="list-group-item text-center"><font face="Arial">Стоимость в сутки</font></li>
+                <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    2500 грн
+                  </div>
+                  <div class="col">
+                    от 26 суток
+                  </div>
+                </li>
+              <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    2700 грн
+                  </div>
+                  <div class="col">
+                    от 10-25 суток
+                  </div>
+                  </div>
+                </li>
+              <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    2900 грн
+                  </div>
+                  <div class="col">
+                    от 4-9 суток
+                  </div>
+                  </div>
+                </li>
+              <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    3100 грн
+                  </div>
+                  <div class="col">
+                    от 1-3 суток
+                  </div>
+                  </div>
+                </li>
+            </ul>
+            <div class="card-body center-block text-center">
+                <button type="button" class="btn btn-primary btn-md">Заказать</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4 px-2">
+        <div class="card">
+            <img src="static/images/cars/..........." class="card-img-top" alt="..." style="position:relative; left:20px; width:85%;">
+            <div class="card-body">
+                <h5 class="card-title" align="center">Mitsubishi Lancer 2015</h5>
+            <div class="row mb-2 mx-auto w-100" >
+                <div class="col-4 text-center p-4">
+                  <img src="static/images/svg/door.svg" style="height:45px; width:45px;" class="w-100" >
+                  <span class="text-nowrap">Дверей-5</span>
+                </div>
+                <div class="col-4 text-center p-4">
+                  <img src="static/images/svg/petrol.svg" style="height:45px; width:45px;" class="w-100">
+                  <span class="text-nowrap">8.5л/100км</span>
+                </div>
+                <div class="col-4 text-center p-4">
+                  <img src="static/images/svg/luggage.svg" style="height:45px; width:45px; " class="w-100">
+                  <span class="text-nowrap">343л</span>
+                </div>
+              </div>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"></li>
+              <li class="list-group-item text-center"><font face="Arial">Стоимость в сутки</font></li>
+                <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    2500 грн
+                  </div>
+                  <div class="col">
+                    от 26 суток
+                  </div>
+                </li>
+              <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    2700 грн
+                  </div>
+                  <div class="col">
+                    от 10-25 суток
+                  </div>
+                  </div>
+                </li>
+              <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    2900 грн
+                  </div>
+                  <div class="col">
+                    от 4-9 суток
+                  </div>
+                  </div>
+                </li>
+              <li class="list-group-item">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col">
+                    3100 грн
+                  </div>
+                  <div class="col">
+                    от 1-3 суток
+                  </div>
+                  </div>
+                </li>
+            </ul>
+            <div class="card-body center-block text-center">
+                <button type="button" class="btn btn-primary btn-md">Заказать</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+{% endblock content %}

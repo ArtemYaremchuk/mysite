@@ -1,0 +1,13 @@
+a:hover {
+    background: #786b59; /* Цвет фона под ссылкой */
+   }
+.logo{
+  position:absolute;
+  height:auto;
+  width:30%;
+  background-size:50%;
+  top: 12%;
+  margin-top: -39px;
+  right:0;
+
+}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %} Отзывы {% endblock title %}
+
+
+{% block content %}
+<div class="container mt-3" >
+<form method="POST" action="leave_rewive/">
+         {%csrf_token%}  <!--  защита от csrf -->
+    <div class="form-group">
+    <input type="text" class="form-control" required placeholder="Ваше имя" name="name"><br>
+    <textarea name="text"  class="form-control" required="" placeholder="Текст комментария" cols="30" rows="3" ></textarea><br>
+    </div>
+     <button type="submit" class="btn btn-primary mb-3">Оставить комментарий </button>
+</form>
+</div>
+
+{%if comment.count > 0 %}
+{%for Comment in comment%}
+<div>
+        <strong>{{Comment.author_name}}  {{Comment.pub_date}} </strong>
+        <div class="media mb-4">
+        <div class="media-body">
+            <font  face="cursive" class="mt-0">{{Comment.comment_text}}</font>
+        </div>
+        </div>
+</div>
+{%endfor%}
+{% else %}
+Комментарий не найденый! Станьте первым
+{%endif%}
+
+
+        {% endblock content %}
