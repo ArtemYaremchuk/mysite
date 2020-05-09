@@ -3,6 +3,7 @@
 {% load static %}
 {% block title %} FAQ {% endblock title %}
 {% block content %}
+
 <section class="about-company-section-1">
    <div class="container">
       <div class="row">
@@ -17,8 +18,10 @@
                   <h2 class=" mb-6 mt-7">Что такое Carsharing?</h2>                  <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" data-target="#collapse1">
+                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" data-target="#collapse1" onClick="imgsrc();">
                               <span>1. Что такое услуга Carsharing?</span>
+                                   <img id="image" src="/static/images/svg/arrow_right.svg" width="25" height="25" >
+
                            </a>
                         </div>
                      </div>
@@ -33,6 +36,7 @@
                         <div class="mb-0 font-lg">
                            <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" data-target="#collapse2">
                               <span>2. Чем вы лучше такси?</span>
+
                            </a>
                         </div>
                      </div>
@@ -449,5 +453,15 @@
          </div>
       </div>
    </div>
+    <script language="javascript">
+        var i=0;
+        var image=document.getElementById("image");
+
+        var imgs=new Array('/static/images/svg/arrow_right.svg','/static/images/svg/arrow_down.svg');
+        function imgsrc() {
+            i++;i%=imgs.length;
+            image.src=imgs[i];
+        }
+    </script>
 </section>
 {% endblock content %}

@@ -15,6 +15,9 @@ def index(request):   # (3) и смотрит здесь на index и дела�
 def faq(request):
     return render(request, 'mainpage/FAQ.html')
 
+def contacts(request):
+    return render(request, 'mainpage/contacts.html')
+
 
 '''
 class CarListView(ListView):
