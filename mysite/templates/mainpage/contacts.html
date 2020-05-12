@@ -6,18 +6,38 @@
 
 {% block content %}
 
-<div class="Contacts container">
+<div class="Contacts container ">
     <div class="row">
-    <div class="numbers col-sm ">
-        <b style="font-size:xx-large">Контакты</b>
-        <ul class="list-group col-4  mb-2 list-group-flush ">
-            <li class="list-group-item">Телефон +38 098 000 8887</li>
-            <li class="list-group-item">Тел./факс+38 050 401 0880</li>
+    <div class="numbers col-5 " style=" border: 1px solid rgb(204, 204, 204); padding: 5px 10px;" >
+        <strong style="background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 5px 10px; text-align: right">02000  г.Київ, ул. Марка Вовчка</strong><br>
+
+        <strong style="font-size:xx-large">Контакты</strong>
+        <ul class="list-group col-9  mb-2 list-group-flush ">
+            <li class="list-group-item">Телефон +38 099 999 9999</li>
+            <li class="list-group-item">Тел./факс+38 099 999 9998</li>
             <li class="list-group-item">E-mail: carsharing@gmail.com</li>
         </ul>
+        <strong style="font-size:x-large">График работы:</strong>
+        <p style="font-size:large; text-indent: 30px">Пн - Сб   9:00 - 18:00</p>
 
     </div>
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3" class="col-7" >
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":540,"width":788,"zoom":17,"queryString":"вулиця Марка Вовчка, Киев, Украина","place_id":"Ej7QstGD0LvQuNGG0Y8g0JzQsNGA0LrQsCDQktC-0LLRh9C60LAsINCa0LjQtdCyLCDQo9C60YDQsNC40L3QsCIuKiwKFAoSCZ-DXL2MzdRAEe1r0MyJsKMBEhQKEgkFRVrhTs_UQBH-RgEX0jFJdg","satellite":false,"centerCoord":[50.44960734545825,30.52014142440193],"cid":"0x1a3b089ccd06bed","lang":"ru","cityUrl":"/ukraine/kiev","cityAnchorText":"Карта [CITY1], Киевская область, Украина","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"207326"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=207326';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/ru/map-embed">1 Map</a>
         </div>
+    </div>
 
 </div>
+
+
 {% endblock content %}

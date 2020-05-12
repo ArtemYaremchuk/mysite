@@ -7,6 +7,7 @@ app_name = 'mainpage'
 urlpatterns = [
      path(r'', views.index, name='index'),  # (2) далее django переходит сюда, видит index и
      path(r'FAQ/', views.faq, name='faq'),
-     path(r'contacts/', views.contacts, name='contacts')
+     path(r'contacts/', views.contacts, name='contacts'),
+     path(r'Volkswagen_Touareg/', views.Volkswagen_Touareg, name='Volkswagen Touareg')
    # path(r'', views.CarListView.as_view(), )
 ]

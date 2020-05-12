@@ -15,7 +15,7 @@
 <div class="row w-100 mx-0"> <!-- 3 cards in a row -->
      <div class="col-4 px-4">
         <div class="card">
-            <img src="static/images/cars/{{car.car_pic}}" class="card-img-top" alt="...">
+            <img src="static/images/cars/{{car.car_pic}}" class="card-img-top" alt="..." style="position:relative; left:20px; width: 89%">
 
             <div class="card-body">
                 <h5 class="card-title" align="center">{{car.car_name}}</h5>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-4 text-center p-4">
                   <img src="static/images/svg/petrol.svg" class="w-100">
-                  <span class="text-nowrap">6.9л/100км</span>
+                  <span class="text-nowrap">8.8л/100км</span>
                 </div>
                 <div class="col-4 text-center p-4">
                   <img src="static/images/svg/luggage.svg" class="w-100">
@@ -84,9 +84,11 @@
                   </div>
                 </li>
             </ul>
-                <!-- Таблица -->
+                     <!-- Таблица -->
             <div class="card-body center-block text-center">
-                <button type="button" class="btn btn-primary btn-md">Заказать</button>
+                <form action="Volkswagen_Touareg">
+                <button type="submit"  class="btn btn-primary btn-md" >Заказать</button>
+                </form>
             </div>
         </div>
     </div>

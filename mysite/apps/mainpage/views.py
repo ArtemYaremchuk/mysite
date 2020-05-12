@@ -15,8 +15,14 @@ def index(request):   # (3) и смотрит здесь на index и дела�
 def faq(request):
     return render(request, 'mainpage/FAQ.html')
 
+
 def contacts(request):
     return render(request, 'mainpage/contacts.html')
+
+
+def Volkswagen_Touareg(request):
+    return render(request, 'cars/Volkswagen_Touareg.html')
+
 
 
 '''
