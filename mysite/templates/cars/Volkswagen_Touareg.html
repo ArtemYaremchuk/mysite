@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %} Volkswagen Touareg {% endblock title %}
+
+{% block content %}
+
+<div class="catalog-single-page">
+    <h1>Аренда Volkswagen Touareg</h1>
+    <div class="row catalog-single-row">
+        <div class=" col-md-5">
+            <div class="tns-inner">
+                <img itemprop="image" style="width:100%" src="/static/images/cars/volkswagen_touareg.png" title="Аренда Volkswagen Touareg">
+            </div>
+        </div>
+        <div class=" col-md-7">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-4 catalog-item-params">
+                    <div>
+                        <span><img style="margin-top: 5px; width:20%" src="/static/images/svg/transmission.svg">  Автомат</span>
+                    </div>
+                    <div>
+                        <span><img style="width:20%" src="/static/images/svg/engine.svg">  3.0л(240л.с)</span>
+                    </div>
+                    <div>
+                        <span><img style="width:20%" src="/static/images/svg/door.svg">  5 дверей</span>
+                    </div>
+                    <div>
+                        <span><img style="width:20%" src="/static/images/svg/car_seat.svg">  5 мест</span>
+                    </div>
+                </div>
+
+                <div  class="col-md-4 catalog-item-params">
+                    <div>
+                        <span><img style="margin-bottom: 5px; width:17%" src="/static/images/svg/drop_petrol.svg">  Дизель</span>
+                    </div>
+                    <div>
+                        <span><img style=" width:17%" src="/static/images/svg/petrol.svg">  8.8л/100км</span>
+                    </div>
+                    <div>
+                        <span><img style="width:20%" src="/static/images/svg/all_wheel_drive.svg">  Полный</span>
+                    </div>
+                    <div>
+                        <span><img style="width:20%" src="/static/images/svg/climate_control1.svg">  Климатконтроль</span>
+                    </div>
+
+                </div>
+            <div class="col-md-4">
+                <div style=" background-color:#66CDAA;" class=" catalog_price-list-col">
+                    <p class="list-white-col-title">В стоимость входит:</p>
+                    <ul style="font-size:14px" class="list-white-col-ul">
+                        <style>
+                           .list-white-col-ul  {  list-style-image: url(/static/images/svg/check.png);  line-height: 24px;}
+                        </style>
+                        <li style="list-style-type: none;" class="">Пробег: 350 км/сутки</li>
+                        <li style="list-style-type: none;" class="">Помощь в пути 24/7</li>
+                        <li style="list-style-type: none;" class="">Страховка: КАСКО</li>
+                        <li style="list-style-type: none;" class="">Топливо на весь период использования автомобиля</li>
+
+                    </ul>
+                </div>  <!--в стоимость входит -->
+
+            </div>
+
+        </div>
+    </div>
+            <div class="container">
+            <div class="row">
+                <div  class="col">
+                    <table class="">
+  <thead>
+    <tr>
+      <th class="text-left" scope="col">Цена без залога</th>
+      <th class="text-center" scope="col">Количество дней</th>
+      <th class="text-right" scope="col">Цена с залогом</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="text-left">3800₴</th>
+      <th class="text-center">1-3</th>
+      <th style="color:blue" class="text-right">3600₴</th>
+
+    </tr>
+    <tr>
+      <th class="text-left">3600₴</th>
+      <th class="text-center">4-9</th>
+      <th style="color:blue" class="text-right">3400₴</th>
+
+    </tr>
+    <tr>
+      <th class="text-left">3400₴</th>
+      <th class="text-center">10-25</th>
+      <th style="color:blue" class="text-right">3200₴</th>
+
+    </tr>
+    <tr>
+      <th class="text-left">3200₴</th>
+      <th class="text-center">26+</th>
+      <th style="color:blue" class="text-right">3000₴</th>
+
+    </tr>
+  </tbody>
+</table>
+                </div>
+                <div class="col">
+                <div style=" background-color:#66CDAA;" class=" catalog_price-list-col">
+                    <p class="list-white-col-title">Требования к водителю:</p>
+                    <ul style="font-size:14px" class="list-white-col-ul">
+                        <style>
+                           .list-white-col-ul  {  list-style-image: url(/static/images/svg/check.png);  line-height: 24px;}
+
+                        </style>
+                        <li style="list-style-type: none;" class="">Вам 23 года или больше</li>
+                        <li style="list-style-type: none;" class="">Ваш опыт вождения больше 2 лет</li>
+                        <li style="list-style-type: none;" class="">Действующее водительское удостоверение</li>
+
+
+                    </ul>
+                </div>
+                    </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+</div>
+
+{% endblock content %}
