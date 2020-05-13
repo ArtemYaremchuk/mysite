@@ -3,7 +3,17 @@
 {% load static %}
 {% block title %} FAQ {% endblock title %}
 {% block content %}
+<style>
+    #myPic {
 
+  width: 25px;
+  height: 25px;
+  background-image: url("/static/images/svg/arrow_right.svg");
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position:right top;
+}
+</style>
 <section class="about-company-section-1">
    <div class="container">
       <div class="row">
@@ -15,17 +25,18 @@
          <div class="col-lg-12">
             <div class="panel-group groups gfaq" id="accordion">
 
-                  <h2 class=" mb-6 mt-7">Что такое Carsharing?</h2>                  <div class="card shadow mb-2">
-                     <div class="card-header">
-                        <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" data-target="#collapse1" onClick="imgsrc();">
-                              <span>1. Что такое услуга Carsharing?</span>
-                                   <img id="image" src="/static/images/svg/arrow_right.svg" width="25" height="25" >
+                  <h2 class=" mb-6 mt-7">Что такое Carsharing?</h2>                  <div  class="card shadow mb-2">
+                     <div  class="card-header">
+                        <div  class="mb-0 font-lg">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse"  data-parent="#accordion" href="#collapse1" aria-expanded="false" data-target="#collapse1" >
+
+                               <span >1. Что такое услуга Carsharing?</span >
+
 
                            </a>
                         </div>
                      </div>
-                     <div id="collapse1" class="collapse" aria-labelledby="collapse1" data-parent="#accordion" style="">
+                     <div id="collapse1" class="collapse" aria-labelledby="collapse1" data-parent="#accordion"  style="">
                         <div class="card-body">
                            Каршеринг - очень удобный и простой прокат автомобиля. Без офисов, менеджеров, бумажных актов выдачи/приёма автомобиля, оплаты в кассу, громадных залогов, возврата автомобиля строго в офисе, в рабочее время и прочей волокиты. Это прокат машины через сайт. В цену включены парковка в городе, топливо, страховки, шины по сезону и многое другое.                                                   </div>
                      </div>
@@ -34,7 +45,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" data-target="#collapse2">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" data-target="#collapse2">
                               <span>2. Чем вы лучше такси?</span>
 
                            </a>
@@ -49,7 +60,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" data-target="#collapse3">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" data-target="#collapse3">
                               <span>3. Это выгодно?</span>
                            </a>
                         </div>
@@ -72,7 +83,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" data-target="#collapse4">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" data-target="#collapse4">
                               <span>4. Я могу взять машину в одном районе, а вернуть в другом?</span>
                            </a>
                         </div>
@@ -85,7 +96,7 @@
                   <h2 class=" mb-6 mt-7">Начать пользоваться </h2>                  <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" data-target="#collapse5">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" data-target="#collapse5">
                               <span>5. Кто может стать клиентом сервиса?</span>
                            </a>
                         </div>
@@ -101,7 +112,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" data-target="#collapse6">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" data-target="#collapse6">
                               <span>6. Как начать пользоваться каршерингом?</span>
                            </a>
                         </div>
@@ -116,7 +127,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" data-target="#collapse7">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" data-target="#collapse7">
                               <span>7. Какие документы необходимы для присоединения к сервису?</span>
                            </a>
                         </div>
@@ -137,7 +148,7 @@
                   <h2 class=" mb-6 mt-7">Цена, как пользоваться?</h2>                  <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" data-target="#collapse8">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" data-target="#collapse8">
                               <span>8. Что включено в цену услуги?</span>
                            </a>
                         </div>
@@ -161,7 +172,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" data-target="#collapse9">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" data-target="#collapse9">
                               <span>9. Тарификация</span>
                            </a>
                         </div>
@@ -176,7 +187,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" data-target="#collapse10">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" data-target="#collapse10">
                               <span>10. Как оплатить услугу?</span>
                            </a>
                         </div>
@@ -191,7 +202,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" data-target="#collapse11">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" data-target="#collapse11">
                               <span>11. Кто заправляет машину?</span>
                            </a>
                         </div>
@@ -206,7 +217,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" data-target="#collapse12">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" data-target="#collapse12">
                               <span>12. Территория использования автомобиля</span>
                            </a>
                         </div>
@@ -222,7 +233,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" data-target="#collapse13">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" data-target="#collapse13">
                               <span>13. Куда и как вернуть автомобиль после использования? Где припарковать машину?</span>
                            </a>
                         </div>
@@ -249,7 +260,7 @@
                   <h2 class=" mb-6 mt-7">Как оплатить. Страховка. Поломка. Происшествие.</h2>       <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" data-target="#collapse14">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" data-target="#collapse14">
                               <span>14. Как проходит оплата за услуги</span>
                            </a>
                         </div>
@@ -264,7 +275,7 @@
                 <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" data-target="#collapse15">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" data-target="#collapse15">
                               <span>15.  Есть ли страховка на автомобили? Какая у меня ответственность</span>
                            </a>
                         </div>
@@ -287,7 +298,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse16" aria-expanded="false" data-target="#collapse16">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse16" aria-expanded="false" data-target="#collapse16">
                               <span>16. Что такое франшиза?</span>
                            </a>
                         </div>
@@ -301,7 +312,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse17" aria-expanded="false" data-target="#collapse17">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse17" aria-expanded="false" data-target="#collapse17">
                               <span>17. У меня случилось ДТП, какие мои действия</span>
                            </a>
                         </div>
@@ -324,7 +335,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse18" aria-expanded="false" data-target="#collapse18">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse18" aria-expanded="false" data-target="#collapse18">
                               <span>18. На вашей машине есть повреждения! Я могу её использовать?</span>
                            </a>
                         </div>
@@ -338,7 +349,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse19" aria-expanded="false" data-target="#collapse19">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse19" aria-expanded="false" data-target="#collapse19">
                               <span>19. С какими повреждениями я могу использовать автомобиль? Например, царапина.</span>
                            </a>
                         </div>
@@ -352,7 +363,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse20" aria-expanded="false" data-target="#collapse20">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse20" aria-expanded="false" data-target="#collapse20">
                               <span>20. Какие повреждения на автомобиле можно не рассматривать и не сообщать оператору?</span>
                            </a>
                         </div>
@@ -367,7 +378,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse21" aria-expanded="false" data-target="#collapse21">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse21" aria-expanded="false" data-target="#collapse21">
                               <span>21. Я обнаружил автомобиль, у которого спущено колесо, какие мои действия?</span>
                            </a>
                         </div>
@@ -381,7 +392,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse22" aria-expanded="false" data-target="#collapse22">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse22" aria-expanded="false" data-target="#collapse22">
                               <span>22. В момент использования автомобиля у меня спустило колесо, что мне делать?</span>
                            </a>
                         </div>
@@ -396,7 +407,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse23" aria-expanded="false" data-target="#collapse23">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse23" aria-expanded="false" data-target="#collapse23">
                               <span>23. Автомобиль сломался, что делать?</span>
                            </a>
                         </div>
@@ -410,7 +421,7 @@
                   <h2 class=" mb-6 mt-7">Дополнительные вопросы</h2>                  <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse24" aria-expanded="false" data-target="#collapse24">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse24" aria-expanded="false" data-target="#collapse24">
                               <span>24. Какие колеса установлены на автомобилях?</span>
                            </a>
                         </div>
@@ -424,7 +435,7 @@
                                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse25" aria-expanded="false" data-target="#collapse25">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse25" aria-expanded="false" data-target="#collapse25">
                               <span>25. Возможна ли перевозка животных и/или крупногабаритных грузов?</span>
                            </a>
                         </div>
@@ -438,7 +449,7 @@
                                     <div class="card shadow mb-2">
                      <div class="card-header">
                         <div class="mb-0 font-lg">
-                           <a class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse26" aria-expanded="false" data-target="#collapse26">
+                           <a id="myPic" onclick="clickOnDiv(this)" class="w-100 d-flex justify-content-between Accordion-link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse26" aria-expanded="false" data-target="#collapse26">
                               <span>26. Могу ли я курить в автомобиле?</span>
                            </a>
                         </div>
@@ -454,14 +465,20 @@
       </div>
    </div>
     <script language="javascript">
-        var i=0;
-        var image=document.getElementById("image");
+   var firstBgImage = '/static/images/svg/arrow_down.svg';
+var secondBgImage = '/static/images/svg/arrow_right.svg';
+var firstBgImageUrl = 'url("' + firstBgImage + '")';
+var secondBgImageUrl = 'url("' + secondBgImage + '")';
 
-        var imgs=new Array('/static/images/svg/arrow_right.svg','/static/images/svg/arrow_down.svg');
-        function imgsrc() {
-            i++;i%=imgs.length;
-            image.src=imgs[i];
-        }
+function clickOnDiv(e) {
+  if (e.style.backgroundImage == firstBgImageUrl)
+    e.style.backgroundImage = secondBgImageUrl;
+
+    else
+    e.style.backgroundImage = firstBgImageUrl;
+
+
+}
     </script>
 </section>
 {% endblock content %}
