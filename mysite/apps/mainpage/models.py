@@ -19,3 +19,24 @@ class Cars(models.Model):
     class Meta:  # переименовать с англ
         verbose_name = 'Машина'
         verbose_name_plural = 'Машины'
+
+
+class RentalCar(models.Model):
+    name = models.CharField('Имя заказчика', max_length=50)
+    number = models.IntegerField('Номер телефона')
+    email = models.EmailField('Электронная почта')
+    message = models.CharField('Сообщение', max_length=300)
+    rental = models.BooleanField('Аренда с залогом',)
+    rental_without = models.BooleanField('Аренда без залога',)
+    wheels_glass_insurance = models.BooleanField('Страховка колес и стекла',)
+    rental_navigator = models.BooleanField('Аренда навигатора',)
+    child_seat_rental = models.BooleanField('Аренда детского кресла',)
+    Unlimited_mileage = models.BooleanField('Неограниченый пробег',)
+
+
+    def __str__(self):
+        return self.name
+
+    class Meta:  # переименовать с англ
+        verbose_name = 'Аренда'
+        verbose_name_plural = 'Аренда заказы'
