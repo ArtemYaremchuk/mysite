@@ -1,0 +1,221 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %} Mitsubishi Lancer 2015 {% endblock title %}
+
+{% block content %}
+
+<div class="catalog-single-page">
+    <h1>Аренда Mitsubishi Lancer 2015</h1>
+    <div class="row catalog-single-row">
+        <div class=" col-md-5">
+            <div class="tns-inner">
+                <img itemprop="image" style="width:100%" src="/static/images/cars/Mitsubishi Lancer_2.4_CVT_4WD_2015.png" title="Аренда Mitsubishi Lancer 2015">
+            </div>
+        </div>
+        <div class=" col-md-7">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-4 catalog-item-params">
+                    <div>
+                        <span><img style="margin-top: 5px; width:20%" src="/static/images/svg/transmission.svg">  Автомат</span>
+                    </div>
+                    <div>
+                        <span><img style="width:20%" src="/static/images/svg/engine.svg">  2.4л(168л.с)</span>
+                    </div>
+                    <div>
+                        <span><img style="width:20%" src="/static/images/svg/door.svg">  4 дверей</span>
+                    </div>
+                    <div>
+                        <span><img style="width:20%" src="/static/images/svg/car_seat.svg">  5 мест</span>
+                    </div>
+                </div>
+
+                <div  class="col-md-4 catalog-item-params">
+                    <div>
+                        <span><img style="margin-bottom: 5px; width:17%" src="/static/images/svg/drop_petrol.svg">  АИ-95</span>
+                    </div>
+                    <div>
+                        <span><img style=" width:17%" src="/static/images/svg/petrol.svg">  9л/100км</span>
+                    </div>
+                    <div>
+                        <span><img style="width:20%" src="/static/images/svg/all_wheel_drive.svg">  Полный(4WD)</span>
+                    </div>
+                    <div>
+                        <span><img style="width:20%" src="/static/images/svg/climate_control1.svg">  Климатконтроль</span>
+                    </div>
+
+                </div>
+            <div class="col-md-4">
+                <div style=" " class=" catalog_price-list-col">
+                    <p class="list-white-col-title">В стоимость входит:</p>
+                    <ul style="font-size:14px" class="list-white-col-ul">
+                        <style>
+                           .list-white-col-ul  {  list-style-image: url(/static/images/svg/check.png);  line-height: 24px;}
+                        </style>
+                        <li style="list-style-type: none;" class="">Пробег: 350 км/сутки</li>
+                        <li style="list-style-type: none;" class="">Помощь в пути 24/7</li>
+                        <li style="list-style-type: none;" class="">Страховка: КАСКО</li>
+                        <li style="list-style-type: none;" class="">Топливо на весь период использования автомобиля</li>
+
+                    </ul>
+                </div>  <!--в стоимость входит -->
+
+            </div>
+
+        </div>
+    </div>
+            <div class="container">
+            <div class="row">
+                <div  style="margin-top: -24px; border: 1px solid black;padding: 0 10px;" class="col">
+                    <table style=" border-collapse:separate; border-spacing: 0px 15px;">
+  <thead >
+    <tr >
+      <th style="border-bottom: 1px solid #000;" class=" text-left" scope="col">Цена без залога</th>
+      <th style="border-bottom: 1px solid #000;" class="text-center" scope="col">Количество дней</th>
+      <th  style="border-bottom: 1px solid #000;" class="text-right" scope="col">Цена с залогом</th>
+
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+
+      <th class=" text-left">1400₴</th>
+      <th class=" text-center">1-3</th>
+      <th style="color:blue" class="text-right">1300₴</th>
+
+
+    </tr>
+    <tr>
+      <th class="text-left">1300₴</th>
+      <th class="text-center">4-9</th>
+      <th style="color:blue" class="text-right">1200₴</th>
+
+    </tr>
+    <tr>
+      <th class="text-left">1200₴</th>
+      <th class="text-center">10-25</th>
+      <th style="color:blue" class="text-right">1100₴</th>
+
+    </tr>
+    <tr>
+      <th style="border-bottom: 1px solid #000;" class="text-left">1100₴</th>
+      <th style="border-bottom: 1px solid #000;" class="text-center">26+</th>
+      <th  style="border-bottom: 1px solid #000; color:blue" class="text-right">1000₴</th>
+
+    </tr>
+  </tbody>
+
+</table>
+                    <p align="center" style="font-weight: bold;" >Залог 1600₴</p>
+                </div>
+                <div class="col">
+                <div style=" " class=" catalog_price-list-col">
+                    <p class="list-white-col-title">Требования к водителю:</p>
+                    <ul style="font-size:14px" class="list-white-col-ul">
+                        <style>
+                           .list-white-col-ul  {  list-style-image: url(/static/images/svg/check.png);  line-height: 24px;}
+
+                        </style>
+                        <li style="list-style-type: none;" class="">Вам 23 года или больше</li>
+                        <li style="list-style-type: none;" class="">Ваш опыт вождения больше 2 лет</li>
+                        <li style="list-style-type: none;" class="">Действующее водительское удостоверение</li>
+
+
+                    </ul>
+                </div>
+                    </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    <form method="POST" action="rental_take_car/">
+        {%csrf_token%}  <!--  защита от csrf -->
+        {{form}}
+<div class="container">
+
+    <div class='col-md-5'>
+        <div class="form-group">
+           <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
+                <input type="text" class="form-control datetimepicker-input" required placeholder="Дата начала аренды" name="dataS" data-target="#datetimepicker7"/>
+                <div class="input-group-append" data-target="#datetimepicker7" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='col-md-5'>
+        <div class="form-group">
+           <div class="input-group date" id="datetimepicker8" data-target-input="nearest">
+                <input type="text" class="form-control datetimepicker-input" required placeholder="Дата окончания аренды" name="dateE" data-target="#datetimepicker8"/>
+                <div class="input-group-append" data-target="#datetimepicker8" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker7').datetimepicker();
+        $('#datetimepicker8').datetimepicker({
+            useCurrent: false
+        });
+        $("#datetimepicker7").on("change.datetimepicker", function (e) {
+            $('#datetimepicker8').datetimepicker('minDate', e.date);
+        });
+        $("#datetimepicker8").on("change.datetimepicker", function (e) {
+            $('#datetimepicker7').datetimepicker('maxDate', e.date);
+        });
+    });
+</script>
+        <div class="container mt-3">
+            <div class="form-group mb-2">
+                <div class="form-row">
+                    <div class="col">
+                <input type="text" class="form-control mb-2 " required placeholder="Введите ваше имя" name="name">
+                <input type="text" class="form-control mb-2 " required placeholder="+__(___)___-__-__" name="number">
+                <input type="email" class="form-control" required placeholder="Введите вашу почту" name="email" ><br>
+                        </div>
+                    <div class="col">
+                <textarea name="message"  class="form-control" required placeholder="Текст комментария" cols="1" rows="4" ></textarea><br>
+                        </div>
+                    </div>
+                    <div>
+                        <strong>Дополнительная страховка: </strong>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox"  id="1" name="rental_without">
+                    <label class="form-check-label" for="1">Аренда без залога <span style="margin-left:192px;">Залогованя сумма: 0₴</span></label>
+                    </div>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox"  id="2" name="rental">
+                    <label class="form-check-label" for="2">Аренда c залогом<span style="margin-left:200px;">Залогованя сумма: 1600₴</span></label>
+                    </div>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="3" name="wheels_glass_insurance" >
+                    <label class="form-check-label" for="3">Страховка колёс и стёкол<span style="margin-left:200px;">100₴ в сутки</span></label>
+                    </div>
+                        <strong>Дополнительные опции: </strong>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox"  id="4" name="rental_navigator" >
+                    <label class="form-check-label" for="4">Аренда навигатора<span style="margin-left:245px;">50₴ в сутки</span></label>
+                    </div>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox"  id="5" name="child_seat_rental">
+                    <label class="form-check-label" for="5">Аренда детского кресла<span style="margin-left:210px;">80₴ в сутки</span></label>
+                    </div>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox"  id="6" name="Unlimited_mileage" >
+                    <label class="form-check-label" for="6">Неограниченый пробег<span style="margin-left:211px;">200₴ в сутки</span></label>
+                    </div>
+                        </div>
+            </div>
+         </div>
+
+            <button type="submit" class="btn btn-primary mb-3">Отправить заявку </button>
+    </form>
+</div>
+
+{% endblock content %}
