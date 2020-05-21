@@ -45,6 +45,7 @@ def chevrolet_cruze(request):
 def rental_take_car(request):
     if request.method == "POST":
         rental_car = RentalCar()
+        rental_car.car_name = request.POST.get("carName")
         rental_car.data_start = request.POST.get("dataS")
         rental_car.data_end = request.POST.get("dateE")
         rental_car.name = request.POST.get("name")

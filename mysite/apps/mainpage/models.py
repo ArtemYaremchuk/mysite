@@ -2,7 +2,7 @@ from django.db import models
 
 
 class RentalCar(models.Model):
-
+    car_name = models.CharField("Название машины", max_length=50)
     data_start = models.CharField('Дата начала аренды', max_length=50)
     data_end = models.CharField('Дата окончания аренды', max_length=50)
     name = models.CharField('Имя заказчика', max_length=50)

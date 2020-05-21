@@ -133,12 +133,12 @@
         </div>
     <form method="POST" action="rental_take_car/">
         {%csrf_token%}  <!--  защита от csrf -->
-        {{form}}
+        <input type="text" value="Chevrolet Cruze" name="carName" style="display: none;">
 <div class="container">
-
     <div class='col-md-5'>
         <div class="form-group">
            <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
+
                 <input type="text" class="form-control datetimepicker-input" required placeholder="Дата начала аренды" name="dataS" data-target="#datetimepicker7"/>
                 <div class="input-group-append" data-target="#datetimepicker7" data-toggle="datetimepicker">
                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>

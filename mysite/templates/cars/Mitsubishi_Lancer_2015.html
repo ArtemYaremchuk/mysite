@@ -11,6 +11,7 @@
     <div class="row catalog-single-row">
         <div class=" col-md-5">
             <div class="tns-inner">
+
                 <img itemprop="image" style="width:100%" src="/static/images/cars/Mitsubishi Lancer_2.4_CVT_4WD_2015.png" title="Аренда Mitsubishi Lancer 2015">
             </div>
         </div>
@@ -135,7 +136,7 @@
         {%csrf_token%}  <!--  защита от csrf -->
         {{form}}
 <div class="container">
-
+<input type="text" value="Mitsubishi Lancer 2015" name="carName" style="display: none;">
     <div class='col-md-5'>
         <div class="form-group">
            <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
